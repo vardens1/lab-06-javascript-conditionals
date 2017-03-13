@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+var num = prompt("Please enter a number.");
+
+var ones = num % 10; 
+//256 % 10 = 6
+
+var tens = num / 10 % 10;
+//256 / 10 % 10 = 5.6
+
+var hundreds = num / 100 % 10;
+//256 / 100 % 10 = 2.56
+
+var thousand = num % 10000 / 1000;
+//256 % 10000 / 1000 = 0.256
+
+console.log(thousand + " thousands\n" + hundreds + " hundreds\n" + tens + " tens\n" + ones + " ones");
+
+</script>
+</body>
+</html>
